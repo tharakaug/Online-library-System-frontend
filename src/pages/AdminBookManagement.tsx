@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "../components/Navbar";
+import './AdminBookManagement.css'
 
 export default function AdminBookManagement() {
     const [books, setBooks] = useState([]);

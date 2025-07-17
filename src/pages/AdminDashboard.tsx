@@ -31,6 +31,13 @@ export default function AdminDashboard() {
                         <p className="text-3xl font-bold">{stats.totalBorrowed}</p>
                     </div>
                 </div>
+                <button className="mb-6 bg-blue-500 text-white px-4 py-2 rounded" onClick={() => window.location.href = "/admin/books"}>
+                    Go to Book Management
+                </button>
+                <button
+                    className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded transition-colors" onClick={() => window.location.href = "/admin/users"}>
+                    Go to User Management
+                </button>
             </div>
         </>
     );
