@@ -1,0 +1,30 @@
+.navbar {
+    background: linear-gradient(to right, #4f46e5, #9333ea);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-links a {
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    color: #ffd700; /* gold color on hover */
+}
