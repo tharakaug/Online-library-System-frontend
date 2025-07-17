@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import './BorrowedBooks.css'
 
 export default function BorrowedBooks() {
     // Temporary dummy data

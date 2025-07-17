@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import './Register.css'
 
 export default function Register() {
     const [email, setEmail] = useState("");

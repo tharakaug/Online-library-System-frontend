@@ -34,6 +34,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Navbar from "../components/Navbar";
+import './BookList.css';
 
 export default function BookList() {
     const [books, setBooks] = useState([]);

@@ -1,0 +1,246 @@
+/*.booklist-container {*/
+/*    padding: 2rem;*/
+/*    min-height: 100vh;*/
+/*    background: linear-gradient(to right, #bfdbfe, #e9d5ff);*/
+/*}*/
+
+/*.booklist-title {*/
+/*    text-align: center;*/
+/*    font-size: 3rem;*/
+/*    font-weight: 800;*/
+/*    color: #1d4ed8;*/
+/*    margin-bottom: 2rem;*/
+/*}*/
+
+/*.book-grid {*/
+/*    display: grid;*/
+/*    grid-template-columns: 1fr;*/
+/*    gap: 2rem;*/
+/*}*/
+
+/*@media (min-width: 768px) {*/
+/*    .book-grid {*/
+/*        grid-template-columns: repeat(3, 1fr);*/
+/*    }*/
+/*}*/
+
+/*.book-card {*/
+/*    background-color: white;*/
+/*    padding: 1.5rem;*/
+/*    border-radius: 1.5rem;*/
+/*    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);*/
+/*    border-top: 5px solid #3b82f6;*/
+/*    transition: transform 0.3s ease, box-shadow 0.3s ease;*/
+/*}*/
+
+/*.book-card:hover {*/
+/*    transform: scale(1.05);*/
+/*    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);*/
+/*}*/
+
+/*.book-title {*/
+/*    font-size: 1.8rem;*/
+/*    font-weight: bold;*/
+/*    color: #1f2937;*/
+/*    margin-bottom: 0.5rem;*/
+/*}*/
+
+/*.book-info {*/
+/*    color: #6b7280;*/
+/*    margin-bottom: 1rem;*/
+/*    font-size: 1.1rem;*/
+/*}*/
+
+/*.book-info span {*/
+/*    font-weight: 600;*/
+/*    color: #374151;*/
+/*}*/
+
+/*.borrow-button {*/
+/*    width: 100%;*/
+/*    padding: 0.75rem;*/
+/*    font-weight: 600;*/
+/*    color: white;*/
+/*    background: linear-gradient(to right, #4ade80, #16a34a);*/
+/*    border: none;*/
+/*    border-radius: 0.75rem;*/
+/*    box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
+/*    cursor: pointer;*/
+/*    font-size: 1.1rem;*/
+/*    transition: background 0.3s, transform 0.2s;*/
+/*}*/
+
+/*.borrow-button:hover {*/
+/*    background: linear-gradient(to right, #22c55e, #15803d);*/
+/*    transform: translateY(-3px);*/
+/*}*/
+
+.p-8 {
+    padding: 2rem;
+}
+
+.min-h-screen {
+    min-height: 100vh;
+}
+
+/* Gradient Background */
+.bg-gradient-to-r {
+    background: linear-gradient(to right, #dbeafe, #e9d5ff);
+}
+
+/* Text */
+.text-4xl {
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.font-extrabold {
+    font-weight: 800;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-blue-700 {
+    color: #1d4ed8;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .md\:grid-cols-3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.gap-8 {
+    gap: 2rem;
+}
+
+/* Book Cards */
+.p-6 {
+    padding: 1.5rem;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+.shadow-xl {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.hover\:shadow-2xl:hover {
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.transform {
+    transform: translateZ(0);
+}
+
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+
+.duration-300 {
+    transition-duration: 300ms;
+}
+
+.ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.border-t-4 {
+    border-top: 4px solid #3b82f6;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.text-gray-800 {
+    color: #1f2937;
+}
+
+.text-gray-600 {
+    color: #4b5563;
+}
+
+.text-gray-500 {
+    color: #6b7280;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+/* Button Styles */
+.w-full {
+    width: 100%;
+}
+
+.bg-gradient-to-r {
+    background: linear-gradient(to right, #4ade80, #16a34a);
+}
+
+.text-white {
+    color: white;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.rounded-lg {
+    border-radius: 0.5rem;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hover\:from-green-500:hover {
+    background: linear-gradient(to right, #22c55e, #16a34a);
+}
+
+.hover\:to-green-700:hover {
+    background: linear-gradient(to right, #22c55e, #15803d);
+}
+
+.transition-colors {
+    transition: background 0.3s ease;
+}

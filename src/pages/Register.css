@@ -1,0 +1,78 @@
+/* Main container styles */
+.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.items-center {
+    align-items: center;
+}
+.min-h-screen {
+    min-height: 100vh;
+}
+.bg-gray-100 {
+    background-color: #f3f4f6;
+}
+
+/* Form styles */
+.bg-white {
+    background-color: #ffffff;
+}
+.p-6 {
+    padding: 1.5rem;
+}
+.rounded {
+    border-radius: 0.25rem;
+}
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.space-y-4 > * + * {
+    margin-top: 1rem;
+}
+
+/* Heading styles */
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.font-bold {
+    font-weight: 700;
+}
+
+/* Input field styles */
+.border {
+    border: 1px solid #e5e7eb;
+}
+.p-2 {
+    padding: 0.5rem;
+}
+.w-full {
+    width: 100%;
+}
+
+/* Button styles */
+.bg-green-500 {
+    background-color: #10b981;
+}
+.text-white {
+    color: #ffffff;
+}
+.rounded {
+    border-radius: 0.25rem;
+}
+
+/* Hover effect for button (recommended addition) */
+.bg-green-500:hover {
+    background-color: #059669;
+    transition: background-color 0.2s ease;
+}
+
+/* Focus styles for better accessibility (recommended addition) */
+input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
