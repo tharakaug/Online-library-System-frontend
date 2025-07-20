@@ -1,0 +1,163 @@
+/* Main container styling */
+.p-6 {
+    padding: 1.5rem;
+}
+
+.max-w-4xl {
+    max-width: 56rem;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Heading styling */
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+/* Form styling */
+.space-y-4 > * + * {
+    margin-top: 1rem;
+}
+
+.mb-8 {
+    margin-bottom: 2rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.border {
+    border-width: 1px;
+    border-style: solid;
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+/* Button styling */
+.bg-blue-600 {
+    background-color: #2563eb;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Book list grid */
+.grid {
+    display: grid;
+}
+
+.gap-4 {
+    gap: 1rem;
+}
+
+/* Book card styling */
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.shadow {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+/* Text styling */
+.text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.text-gray-600 {
+    color: #4b5563;
+}
+
+.text-gray-500 {
+    color: #6b7280;
+}
+
+/* Action buttons */
+.space-x-2 > * + * {
+    margin-left: 0.5rem;
+}
+
+.bg-green-500 {
+    background-color: #10b981;
+}
+
+.bg-red-500 {
+    background-color: #ef4444;
+}
+
+.px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.py-1 {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+
+/* Hover effects */
+.bg-blue-600:hover {
+    background-color: #1d4ed8;
+}
+
+.bg-green-500:hover {
+    background-color: #059669;
+}
+
+.bg-red-500:hover {
+    background-color: #dc2626;
+}
+
+/* Transitions */
+button {
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Border color */
+.border {
+    border-color: #e5e7eb;
+}
