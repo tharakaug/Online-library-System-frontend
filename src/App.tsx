@@ -1,15 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./view/pages/Login/Login.tsx";
-import Register from "./view/pages/Register/Register.tsx";
-import BookList from "./view/pages/BookList/BookList.tsx";
-import AdminDashboard from "./view/pages/AdminDashboard/AdminDashboard.tsx";
-import BorrowedBooks from "./view/pages/BorrowedBooks/BorrowedBooks.tsx";
-import AdminBookManagement from "./view/pages/AdminBookManagement/AdminBookManagement.tsx";
+import {Login} from "./view/pages/Login/Login.tsx";
+import {Register} from "./view/pages/Register/Register.tsx";
+import {BookList} from "./view/pages/BookList/BookList.tsx";
+import {AdminDashboard} from "./view/pages/AdminDashboard/AdminDashboard.tsx";
+import {BorrowedBooks} from "./view/pages/BorrowedBooks/BorrowedBooks.tsx";
+import {AdminBookManagement} from "./view/pages/AdminBookManagement/AdminBookManagement.tsx";
+import {DefaultLayout} from "./view/common/DefaultLayout/DefaultLayout.tsx";
 
 function App() {
+
     return (
         <BrowserRouter>
             <Routes>
+                <Route path="/*" element={<DefaultLayout />} />
                 <Route path="/" element={<BookList />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />

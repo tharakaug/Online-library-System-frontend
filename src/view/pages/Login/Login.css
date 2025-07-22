@@ -1,62 +1,100 @@
-/* Main container styles */
 .flex {
     display: flex;
 }
+
 .justify-center {
     justify-content: center;
 }
+
 .items-center {
     align-items: center;
 }
+
 .min-h-screen {
     min-height: 100vh;
 }
+
 .bg-gray-100 {
     background-color: #f3f4f6;
 }
 
-/* Form styles */
 .bg-white {
-    background-color: #fff;
+    background-color: #ffffff;
 }
+
 .p-6 {
     padding: 1.5rem;
 }
+
+.w-80 {
+    width: 20rem;
+}
+
 .rounded {
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
 }
+
 .shadow-md {
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .space-y-4 > * + * {
     margin-top: 1rem;
 }
 
-/* Heading styles */
 .text-2xl {
     font-size: 1.5rem;
-    line-height: 2rem;
+    font-weight: 700;
 }
+
 .font-bold {
     font-weight: 700;
 }
 
-/* Input field styles */
-.border {
-    border-width: 1px;
-    border-color: #e5e7eb;
+.text-center {
+    text-align: center;
 }
+
+.border {
+    border: 1px solid #d1d5db;
+}
+
 .p-2 {
     padding: 0.5rem;
 }
+
 .w-full {
     width: 100%;
 }
 
-/* Button styles */
-.bg-blue-500 {
-    background-color: #3b82f6;
+.bg-blue-600 {
+    background-color: #2563eb;
 }
+
+.hover\:bg-blue-700:hover {
+    background-color: #1d4ed8;
+}
+
 .text-white {
-    color: #fff;
+    color: #ffffff;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+.text-blue-600 {
+    color: #2563eb;
+}
+
+.hover\:text-blue-700:hover {
+    color: #1d4ed8;
+}
+
+.underline {
+    text-decoration: underline;
 }

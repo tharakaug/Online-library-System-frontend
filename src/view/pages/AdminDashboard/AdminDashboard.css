@@ -1,108 +1,153 @@
-/* Navbar styles */
-.navbar {
-    /* Add your Navbar styles here */
-}
-
-/* Admin Dashboard container */
 .p-6 {
     padding: 1.5rem;
 }
 
-/* Title styles */
-.text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-}
-.font-bold {
-    font-weight: 700;
-}
-.mb-6 {
-    margin-bottom: 1.5rem;
+.max-w-6xl {
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Grid layout */
+.text-4xl {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.mb-10 {
+    margin-bottom: 2.5rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-teal-700 {
+    color: #0f766e;
+}
+
 .grid {
     display: grid;
 }
+
 .grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-@media (min-width: 768px) {
-    .md\:grid-cols-3 {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-}
-.gap-6 {
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
 }
 
-/* Stat card styles */
-.p-4 {
-    padding: 1rem;
+.md\:grid-cols-3 {
+    grid-template-columns: 1fr 1fr 1fr;
 }
-.bg-blue-600 {
-    background-color: #2563eb;
+
+.gap-8 {
+    gap: 2rem;
 }
-.bg-green-600 {
-    background-color: #16a34a;
+
+.p-8 {
+    padding: 2rem;
 }
-.bg-yellow-600 {
-    background-color: #ca8a04;
-}
+
 .text-white {
-    color: #fff;
-}
-.rounded {
-    border-radius: 0.25rem;
-}
-.shadow {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    color: white;
 }
 
-/* Card content styles */
-.text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+.rounded-2xl {
+    border-radius: 1rem;
 }
 
-/* Button styles */
-.bg-blue-500 {
-    background-color: #3b82f6;
-    margin-top: 20px;
-    margin-right: 10px;
-}
-.bg-green-500 {
-    background-color: #10b981;
-}
-.px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-.py-2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-.rounded {
-    border-radius: 0.25rem;
-}
-.transition-colors {
-    transition-property: background-color, border-color, color, fill, stroke;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
+.shadow-xl {
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
 }
 
-/* Hover states */
-.hover\:bg-blue-600:hover {
-    background-color: #2563eb;
-}
-.hover\:bg-green-600:hover {
-    background-color: #059669;
+.text-2xl {
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
-/* Button container */
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.text-4xl {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
 .flex {
     display: flex;
 }
+
+.flex-col {
+    flex-direction: column;
+}
+
+.md\:flex-row {
+    flex-direction: row;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
 .gap-4 {
     gap: 1rem;
 }
+
+.px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.rounded-xl {
+    border-radius: 0.75rem;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+}
+
+.transition-transform {
+    transition: transform 0.3s ease;
+}
+
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+
+/* Gradient backgrounds */
+.bg-gradient-to-br {
+    background: linear-gradient(to bottom right, var(--from-color), var(--to-color));
+}
+
+.bg-gradient-to-r {
+    background: linear-gradient(to right, var(--from-color), var(--to-color));
+}
+
+/* Specific color gradients */
+.from-sky-400 { --from-color: #38bdf8; }
+.to-sky-600 { --to-color: #0284c7; }
+
+.from-lime-400 { --from-color: #a3e635; }
+.to-lime-600 { --to-color: #65a30d; }
+
+.from-pink-500 { --from-color: #ec4899; }
+.to-pink-700 { --to-color: #be185d; }
+
+.from-cyan-500 { --from-color: #06b6d4; }
+.to-cyan-700 { --to-color: #0e7490; }
+
+.from-fuchsia-500 { --from-color: #d946ef; }
+.to-fuchsia-700 { --to-color: #a21caf; }
+
+.hover\:from-cyan-600:hover { --from-color: #0891b2; }
+.hover\:to-cyan-800:hover { --to-color: #155e75; }
+
+.hover\:from-fuchsia-600:hover { --from-color: #c026d3; }
+.hover\:to-fuchsia-800:hover { --to-color: #86198f; }

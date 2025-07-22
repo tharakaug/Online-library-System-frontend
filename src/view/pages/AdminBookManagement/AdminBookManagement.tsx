@@ -38,9 +38,9 @@
 
 import { useEffect, useState } from "react";
 import { getBooks, addBook, updateBook, deleteBook } from "../../../api/BookApi.ts";
-import Navbar from "../../common/Navbar/Navbar.tsx";
+import {Navbar} from "../../common/Navbar/Navbar.tsx";
 
-export default function AdminBooksPage() {
+export function AdminBookManagement() {
     const [books, setBooks] = useState([]);
     const [form, setForm] = useState({ title: "", author: "", genre: "" });
     const [editId, setEditId] = useState<string | null>(null);

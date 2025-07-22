@@ -31,9 +31,9 @@
 
 import { useEffect, useState } from "react";
 import { getMyBorrows, returnBook } from "../../../api/BorrrowApi.ts";
-import Navbar from "../../common/Navbar/Navbar.tsx";
+import {Navbar} from "../../common/Navbar/Navbar.tsx";
 
-export default function BorrowedBooksPage() {
+export function BorrowedBooks() {
     const [borrows, setBorrows] = useState([]);
 
     const loadBorrows = async () => {
