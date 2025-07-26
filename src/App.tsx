@@ -13,12 +13,12 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/*" element={<DefaultLayout />} />
-                <Route path="/" element={<BookList />} />
+                {/*<Route path="/" element={<BookList />} />*/}
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
-                <Route path="/admin" element={<AdminDashboard />} />
-                <Route path="/borrowed" element={<BorrowedBooks />} />
-                <Route path="/admin/books" element={<AdminBookManagement />} />
+                {/*<Route path="/admin" element={<AdminDashboard />} />*/}
+                {/*<Route path="/borrowed" element={<BorrowedBooks />} />*/}
+                {/*<Route path="/admin/books" element={<AdminBookManagement />} />*/}
                 {/*<Route path="/admin/books" element={<AdminBooks />} />*/}
             </Routes>
         </BrowserRouter>

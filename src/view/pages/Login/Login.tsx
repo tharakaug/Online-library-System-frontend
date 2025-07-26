@@ -59,7 +59,7 @@ export function Login() {
     const handleLogin = async (e: React.FormEvent) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:5000/api/auth/login", {
+            const response = await axios.post("http://localhost:3000/api/v1/auth/login", {
                 email,
                 password,
             });

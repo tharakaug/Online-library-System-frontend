@@ -14,9 +14,9 @@ const initialState: BooksState = {
 };
 
 export const getAllBooks = createAsyncThunk(
-    'books/getAll',
+    'book/All',
     async () => {
-        const response = await fetch('http://localhost:3000/books');
+        const response = await fetch('http://localhost:3000/api/v1/book');
         return await response.json();
     }
 )
