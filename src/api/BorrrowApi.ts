@@ -1,5 +1,5 @@
 import API from "../api.ts";
 
-export const getMyBorrows = () => API.get("/borrows");
-export const borrowBook = (bookId) => API.post("/borrow/borrow", { bookId });
-export const returnBook = (borrowId) => API.put(`/borrow/return/${borrowId}`);
+export const getMyBorrows = () => API.get("/borrows/all");
+export const borrowBook = (bookId) => API.post("/borrows", { bookId });
+export const returnBook = (borrowId) => API.put(`/borrows/${borrowId}`);
