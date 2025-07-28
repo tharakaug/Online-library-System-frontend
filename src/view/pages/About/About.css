@@ -1,0 +1,176 @@
+/*!* Background *!*/
+/*.modern-login-wrapper {*/
+/*    min-height: 100vh;*/
+/*    background: linear-gradient(135deg, #e0f2fe, #bfdbfe);*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+/*}*/
+
+/*!* Card Container *!*/
+/*.modern-login-card {*/
+/*    background: rgba(255, 255, 255, 0.95);*/
+/*    border: 1px solid #dbeafe;*/
+/*    border-radius: 1.5rem;*/
+/*    padding: 2.5rem;*/
+/*    width: 360px;*/
+/*    box-shadow: 0 16px 40px rgba(30, 64, 175, 0.15);*/
+/*    backdrop-filter: blur(8px);*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 1.5rem;*/
+/*}*/
+
+/*!* Title *!*/
+/*.modern-login-title {*/
+/*    text-align: center;*/
+/*    font-size: 2rem;*/
+/*    font-weight: 800;*/
+/*    color: #1e40af;*/
+/*    margin-bottom: 0.5rem;*/
+/*}*/
+
+/*!* Input group *!*/
+/*.modern-input-group {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*.modern-input-group label {*/
+/*    font-size: 0.9rem;*/
+/*    color: #1e3a8a;*/
+/*    margin-bottom: 0.4rem;*/
+/*}*/
+
+/*.modern-input-group input {*/
+/*    padding: 12px 14px;*/
+/*    font-size: 1rem;*/
+/*    border-radius: 0.75rem;*/
+/*    border: 1px solid #cbd5e1;*/
+/*    transition: 0.2s;*/
+/*}*/
+
+/*.modern-input-group input:focus {*/
+/*    border-color: #2563eb;*/
+/*    outline: none;*/
+/*    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);*/
+/*}*/
+
+/*!* Button *!*/
+/*.modern-login-button {*/
+/*    padding: 12px;*/
+/*    background: linear-gradient(to right, #2563eb, #3b82f6);*/
+/*    color: white;*/
+/*    font-weight: bold;*/
+/*    border: none;*/
+/*    border-radius: 0.75rem;*/
+/*    cursor: pointer;*/
+/*    transition: all 0.3s ease;*/
+/*}*/
+
+/*.modern-login-button:hover {*/
+/*    background: linear-gradient(to right, #1d4ed8, #60a5fa);*/
+/*    transform: translateY(-2px);*/
+/*    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);*/
+/*}*/
+
+/*!* Footer *!*/
+/*.modern-login-footer {*/
+/*    text-align: center;*/
+/*    font-size: 0.9rem;*/
+/*    color: #3b82f6;*/
+/*    cursor: pointer;*/
+/*    text-decoration: underline;*/
+/*    margin-top: 0.5rem;*/
+/*}*/
+
+.about-container {
+    background: #f8f9fc;
+    min-height: 100vh;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-content .intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-content .intro h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.about-content .intro p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.about-content .highlight {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.feature-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.feature-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.quote {
+    margin-top: 50px;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #444;
+    text-align: center;
+    padding: 20px;
+    background-color: #e9f1ff;
+    border-left: 5px solid #007bff;
+    border-radius: 8px;
+}
+
+.quote footer {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+

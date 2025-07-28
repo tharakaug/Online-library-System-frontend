@@ -1,48 +1,245 @@
-nav {
-    background: linear-gradient(to right, #2563eb, #4f46e5);
+/*nav {*/
+/*    background: linear-gradient(to right, #2563eb, #4f46e5);*/
+/*    color: white;*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    padding: 1rem 2rem;*/
+/*    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+/*    position: sticky;*/
+/*    top: 0;*/
+/*    z-index: 100;*/
+/*}*/
+
+/*nav div:first-child {*/
+/*    font-weight: bold;*/
+/*    font-size: 1.8rem;*/
+/*}*/
+
+/*nav div:last-child a {*/
+/*    margin-left: 1.5rem;*/
+/*    font-size: 1.1rem;*/
+/*    font-weight: 500;*/
+/*    color: white;*/
+/*    text-decoration: none;*/
+/*    transition: color 0.3s ease, transform 0.3s ease;*/
+/*}*/
+
+/*nav div:last-child a:hover {*/
+/*    color: #ffd700; !* gold hover color *!*/
+/*    transform: scale(1.1);*/
+/*}*/
+
+/*!* Optional Responsive Styling *!*/
+/*@media (max-width: 768px) {*/
+/*    nav {*/
+/*        flex-direction: column;*/
+/*        align-items: flex-start;*/
+/*    }*/
+
+/*    nav div:last-child {*/
+/*        margin-top: 1rem;*/
+/*    }*/
+
+/*    nav div:last-child a {*/
+/*        display: block;*/
+/*        margin: 0.5rem 0;*/
+/*    }*/
+/*}*/
+
+
+/*!* Core Navbar Styles *!*/
+/*!*.navbar {*!*/
+/*!*    background: linear-gradient(to right, #1e3a8a, #3b82f6); !* deep blue to light blue *!*!*/
+/*!*    color: white;*!*/
+/*!*    display: flex;*!*/
+/*!*    justify-content: space-between;*!*/
+/*!*    align-items: center;*!*/
+/*!*    padding: 1rem 2rem;*!*/
+/*!*    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);*!*/
+/*!*    position: sticky;*!*/
+/*!*    top: 0;*!*/
+/*!*    z-index: 100;*!*/
+/*!*    font-family: 'Segoe UI', sans-serif;*!*/
+/*!*}*!*/
+
+/*!*!* Brand *!*!*/
+/*!*.navbar-brand {*!*/
+/*!*    font-size: 1.8rem;*!*/
+/*!*    font-weight: 700;*!*/
+/*!*}*!*/
+
+/*!*!* Links *!*!*/
+/*!*.navbar-links {*!*/
+/*!*    display: flex;*!*/
+/*!*    align-items: center;*!*/
+/*!*    gap: 1.5rem;*!*/
+/*!*}*!*/
+
+/*!*.navbar-links a {*!*/
+/*!*    font-size: 1rem;*!*/
+/*!*    font-weight: 500;*!*/
+/*!*    color: white;*!*/
+/*!*    text-decoration: none;*!*/
+/*!*    transition: all 0.3s ease;*!*/
+/*!*}*!*/
+
+/*!*.navbar-links a:hover {*!*/
+/*!*    color: #facc15; !* golden-yellow *!*!*/
+/*!*    transform: translateY(-1px);*!*/
+/*!*}*!*/
+
+/*!*!* Register Button *!*!*/
+/*!*.register-btn {*!*/
+/*!*    background-color: #10b981; !* green *!*!*/
+/*!*    padding: 0.4rem 0.8rem;*!*/
+/*!*    border-radius: 6px;*!*/
+/*!*    font-weight: 600;*!*/
+/*!*    color: white !important;*!*/
+/*!*    transition: background-color 0.3s ease;*!*/
+/*!*}*!*/
+
+/*!*.register-btn:hover {*!*/
+/*!*    background-color: #059669;*!*/
+/*!*}*!*/
+
+/*!*!* Logout Button *!*!*/
+/*!*.logout-btn {*!*/
+/*!*    background-color: #ef4444; !* red *!*!*/
+/*!*    color: white;*!*/
+/*!*    border: none;*!*/
+/*!*    padding: 0.4rem 0.8rem;*!*/
+/*!*    border-radius: 6px;*!*/
+/*!*    font-weight: 600;*!*/
+/*!*    cursor: pointer;*!*/
+/*!*    transition: background-color 0.3s ease;*!*/
+/*!*}*!*/
+
+/*!*.logout-btn:hover {*!*/
+/*!*    background-color: #dc2626;*!*/
+/*!*}*!*/
+
+/*!*!* Username display *!*!*/
+/*!*.username {*!*/
+/*!*    font-size: 1rem;*!*/
+/*!*    font-weight: 500;*!*/
+/*!*    margin-right: 1rem;*!*/
+/*!*}*!*/
+
+/*!*!* Responsive Design *!*!*/
+/*!*@media (max-width: 768px) {*!*/
+/*!*    .navbar {*!*/
+/*!*        flex-direction: column;*!*/
+/*!*        align-items: flex-start;*!*/
+/*!*    }*!*/
+
+/*!*    .navbar-links {*!*/
+/*!*        flex-direction: column;*!*/
+/*!*        align-items: flex-start;*!*/
+/*!*        gap: 0.75rem;*!*/
+/*!*        margin-top: 0.5rem;*!*/
+/*!*    }*!*/
+
+/*!*    .username {*!*/
+/*!*        margin: 0;*!*/
+/*!*    }*!*/
+/*!*}*!*/
+
+.navbar {
+    background: linear-gradient(to right, #1e3a8a, #3b82f6);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     position: sticky;
     top: 0;
     z-index: 100;
+    font-family: 'Segoe UI', sans-serif;
 }
 
-nav div:first-child {
+.navbar-brand {
+    font-size: 1.6rem;
     font-weight: bold;
-    font-size: 1.8rem;
 }
 
-nav div:last-child a {
-    margin-left: 1.5rem;
-    font-size: 1.1rem;
-    font-weight: 500;
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li a {
     color: white;
+    font-size: 1.05rem;
     text-decoration: none;
+    font-weight: 500;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-nav div:last-child a:hover {
-    color: #ffd700; /* gold hover color */
-    transform: scale(1.1);
+.navbar-links li a:hover {
+    color: #ffd700; /* golden hover */
+    transform: translateY(-2px);
 }
 
-/* Optional Responsive Styling */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.username {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.logout-btn {
+    background-color: #e32121;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #dc2626;
+}
+
+.register-btn {
+    background-color: #10b981;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-weight: 600;
+    color: white !important;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #059669;
+}
+
 @media (max-width: 768px) {
-    nav {
+    .navbar {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    nav div:last-child {
-        margin-top: 1rem;
+    .navbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 0.5rem;
     }
 
-    nav div:last-child a {
-        display: block;
-        margin: 0.5rem 0;
+    .navbar-right {
+        margin-top: 1rem;
     }
 }

@@ -1,109 +1,80 @@
-/* Container that centers content horizontally and vertically, fills full viewport height, light gray background */
-.flex {
+.register-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ebf8ff, #e0f2fe);
     display: flex;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.items-center {
     align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.min-h-screen {
-    min-height: 100vh; /* full viewport height */
-}
-
-.bg-gray-100 {
-    background-color: #f7fafc; /* Tailwind gray-100 */
-}
-
-/* The form styling */
-.bg-white {
-    background-color: #ffffff;
-}
-
-.p-6 {
-    padding: 1.5rem; /* 24px */
-}
-
-.rounded {
-    border-radius: 0.375rem; /* 6px */
-}
-
-.shadow-md {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.space-y-4 > * + * {
-    margin-top: 1rem; /* 16px */
-}
-
-.w-80 {
-    width: 20rem; /* 320px */
-}
-
-/* Heading */
-.text-2xl {
-    font-size: 1.5rem; /* 24px */
-    line-height: 2rem; /* 32px */
-}
-
-.font-bold {
-    font-weight: 700;
-}
-
-.text-center {
-    text-align: center;
-}
-
-/* Inputs */
-.border {
-    border: 1px solid #d1d5db; /* Tailwind gray-300 */
-}
-
-.p-2 {
-    padding: 0.5rem; /* 8px */
-}
-
-.w-full {
+.register-wrapper {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 50px rgba(37, 99, 235, 0.15);
     width: 100%;
+    max-width: 400px;
+    border: 1px solid #bae6fd;
+    transition: transform 0.3s ease;
 }
 
-.rounded {
-    border-radius: 0.375rem; /* 6px */
+.register-wrapper:hover {
+    transform: scale(1.02);
 }
 
-/* Buttons */
-.bg-green-600 {
-    background-color: #16a34a;
-}
-
-.hover\:bg-green-700:hover {
-    background-color: #15803d;
-}
-
-.text-white {
-    color: white;
-}
-
-.font-semibold {
-    font-weight: 600;
-}
-
-.text-sm {
-    font-size: 0.875rem; /* 14px */
-}
-
-.text-green-600 {
-    color: #16a34a;
-}
-
-.underline {
-    text-decoration: underline;
-}
-
-.text-center {
+.register-title {
+    font-size: 1.75rem;
+    font-weight: 800;
     text-align: center;
+    color: #1e40af;
+    margin-bottom: 1.5rem;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.register-form input {
+    padding: 0.75rem;
+    border: 1px solid #dbeafe;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.register-form input:focus {
+    border-color: #2563eb;
+}
+
+.register-button {
+    background: #2563eb;
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-button:hover {
+    background: #1d4ed8;
+}
+
+.register-footer {
+    font-size: 0.95rem;
+    color: #475569;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.register-footer span {
+    color: #2563eb;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
 }

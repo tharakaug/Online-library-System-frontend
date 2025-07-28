@@ -16,7 +16,7 @@ export function MainContent() {
                 <Route path="/register" element={<Register />} />
                 <Route path="/admin" element={<AdminDashboard />} />
                 <Route path="/borrowed" element={<BorrowedBooks />} />
-                <Route path="/admin/books" element={<AdminBookManagement />} />
+                <Route path="/adminBooks" element={<AdminBookManagement />} />
             </Routes>
         </>
     );

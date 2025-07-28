@@ -1,14 +1,28 @@
 import './Footer.css';
+import { FaFacebook, FaTwitter, FaInstagram, FaGithub } from 'react-icons/fa';
+
 export function Footer() {
     return (
-        <footer className="bg-gray-800 text-white py-6 mt-10">
-            <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-                <p className="text-sm">&copy; {new Date().getFullYear()} Online Library System. All rights reserved.</p>
-                <div className="flex gap-4 mt-4 md:mt-0">
-                    <a href="#" className="hover:text-green-400 transition duration-300">Home</a>
-                    <a href="#" className="hover:text-green-400 transition duration-300">Books</a>
-                    <a href="#" className="hover:text-green-400 transition duration-300">Contact</a>
-                    <a href="#" className="hover:text-green-400 transition duration-300">About</a>
+        <footer className="custom-footer">
+            <div className="footer-container">
+                <div className="footer-left">
+                    <p className="footer-text">
+                        &copy; {new Date().getFullYear()} <span className="highlight">Online Library System</span> 📚. All rights reserved.
+                    </p>
+                </div>
+
+                <div className="footer-links">
+                    <a href="#">Home</a>
+                    <a href="#">Books</a>
+                    <a href="#">Contact</a>
+                    <a href="#">About</a>
+                </div>
+
+                <div className="footer-social">
+                    <a href="#"><FaFacebook /></a>
+                    <a href="#"><FaTwitter /></a>
+                    <a href="#"><FaInstagram /></a>
+                    <a href="#"><FaGithub /></a>
                 </div>
             </div>
         </footer>

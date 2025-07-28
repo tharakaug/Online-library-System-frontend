@@ -6,6 +6,10 @@ import {AdminDashboard} from "./view/pages/AdminDashboard/AdminDashboard.tsx";
 import {BorrowedBooks} from "./view/pages/BorrowedBooks/BorrowedBooks.tsx";
 import {AdminBookManagement} from "./view/pages/AdminBookManagement/AdminBookManagement.tsx";
 import {DefaultLayout} from "./view/common/DefaultLayout/DefaultLayout.tsx";
+import {About} from "./view/pages/About/About.tsx";
+import {Contact} from "./view/pages/Contact/Contact.tsx";
+import * as React from "react";
+
 
 function App() {
 
@@ -20,6 +24,10 @@ function App() {
                 {/*<Route path="/borrowed" element={<BorrowedBooks />} />*/}
                 {/*<Route path="/admin/books" element={<AdminBookManagement />} />*/}
                 {/*<Route path="/admin/books" element={<AdminBooks />} />*/}
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/adminBook" element={<AdminBookManagement />} />
+
             </Routes>
         </BrowserRouter>
     );

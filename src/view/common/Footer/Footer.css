@@ -1,91 +1,71 @@
-.bg-gray-800 {
-    background-color: #1f2937; /* dark gray */
+.custom-footer {
+    background: linear-gradient(to right, #072150, #395c98); /* Dark blue gradient */
+    color: #f8fafc;
+    padding: 2rem 0rem;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
+    font-family: 'Segoe UI', sans-serif;
 }
 
-.text-white {
-    color: white;
-}
-
-.py-6 {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
-.mt-10 {
-    margin-top: 2.5rem;
-}
-
-.container {
+.footer-container {
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.flex {
+    margin: auto;
     display: flex;
-}
-
-.flex-col {
     flex-direction: column;
-}
-
-.md\:flex-row {
-    flex-direction: row;
-}
-
-.justify-between {
-    justify-content: space-between;
-}
-
-.items-center {
+    gap: 2rem;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.text-sm {
-    font-size: 0.875rem;
+.footer-left .footer-text {
+    font-size: 0.95rem;
+    color: #ffffff;
 }
 
-.gap-4 {
-    gap: 1rem;
+.footer-text .highlight {
+    color: #38bdf8;
+    font-weight: 600;
 }
 
-.mt-4 {
-    margin-top: 1rem;
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.md\:mt-0 {
-    margin-top: 0;
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
-.hover\:text-green-400:hover {
+.footer-links a:hover {
     color: #22c55e;
 }
 
-.transition {
-    transition-property: all;
+.footer-social {
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1.3rem;
+    justify-content: center;
 }
 
-.duration-300 {
-    transition-duration: 300ms;
+.footer-social a {
+    color: #ffffff;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Responsive Media Queries for md: prefix (768px breakpoint) */
+.footer-social a:hover {
+    color: #38bdf8;
+    transform: translateY(-4px);
+}
+
 @media (min-width: 768px) {
-    .md\:flex-row {
+    .footer-container {
         flex-direction: row;
-    }
-
-    .md\:mt-0 {
-        margin-top: 0;
+        justify-content: space-between;
+        text-align: left;
     }
 }

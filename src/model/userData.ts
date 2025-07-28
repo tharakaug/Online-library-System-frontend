@@ -1,4 +1,5 @@
 export interface UserData{
-    username: string | null;
+    email: string | null;
     role: string |null;
+    username: string | null
 }

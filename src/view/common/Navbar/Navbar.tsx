@@ -1,9 +1,8 @@
-import {Link} from "react-router-dom";
-import './Navbar.css'
-import {useEffect, useState} from "react";
+import { Link } from "react-router-dom";
+import './Navbar.css';
+import { useEffect, useState } from "react";
 
 export function Navbar() {
-
     const [username, setUsername] = useState<string | null>(null);
     const [role, setRole] = useState<string | null>(null);
 
@@ -11,19 +10,51 @@ export function Navbar() {
         const storedUsername = localStorage.getItem('username');
         const storedRole = localStorage.getItem('role');
         setUsername(storedUsername);
-        setRole(storedRole)
+        setRole(storedRole);
     }, []);
 
     return (
-        <nav className="bg-blue-700 text-white flex justify-between p-4">
-            <div className="font-bold text-xl">Online Library 📚</div>
-            <div className="space-x-4">
-                <Link to="/" className="hover:text-gray-300">Books</Link>
-                <Link to="/borrowed" className="hover:text-gray-300">My Borrowed</Link>
-                <Link to="/admin" className="hover:text-gray-300">Admin</Link>
-                <Link to="/login" className="hover:text-gray-300">Login</Link>
-                <Link to="/register" className="hover:text-gray-300">Register</Link>
-            </div>
+        <nav className="navbar">
+            <div className="navbar-brand">📚 Online Library</div>
+            <ul className="navbar-links">
+                {role === 'ADMIN' && (
+                    <>
+                        <li><Link to="/admin">Admin</Link></li>
+                        <li><Link to="/adminBooks">Books Management</Link></li>
+                        <li><Link to="/a">User Management</Link></li>
+                    </>
+                )}
+                {role === 'USER' && (
+                    <>
+                        <li><Link to="/">Books</Link></li>
+                        <li><Link to="/borrowed">My Borrowed</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
+
+                    </>
+                )}
+                {!username && (
+                    <>
+                        <li><Link to="/login">Login</Link></li>
+                        <li><Link to="/register" className="register-btn">Register</Link></li>
+                    </>
+                )}
+            </ul>
+
+            {/*user info*/}
+            {username && (
+                <div className="username">
+
+                    <span className="font-semibold">Hello, {username}</span>
+                    <Link
+                        to="/login"
+                        className="inline-flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white text-sm font-semibold px-4 py-2 rounded-lg shadow-lg transition duration-300">
+                        <span>Log Out</span>
+                    </Link>
+
+                </div>
+            )}
         </nav>
     );
 }
+
