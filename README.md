@@ -33,3 +33,5 @@ Efficient Build Process: Leveraging Vite for fast development and build times.
 Modern JavaScript Syntax: Utilizing TypeScript for type safety and better developer experience.
 
 Clean Code Structure: Organized components and clear file structure for maintainability.
+
+Email Service : After the registration send email for register user
